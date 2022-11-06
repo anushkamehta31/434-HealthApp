@@ -1,14 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragments.FriendsFragment">
 
-    <!-- TODO: Update blank fragment layout -->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/dropdown_menu"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="10dp">
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/rufina"
+            android:layout_weight="1"
+            android:hint="Add Friends"
+            android:inputType="none"
+            android:text="anushkamehta" />
+    </com.google.android.material.textfield.TextInputLayout>
+
     <TextView
+        android:id="@+id/tvMyFriends"
+        android:layout_width="wrap_content"
+        android:text="My Friends"
+        android:fontFamily="@font/rufina"
+        android:layout_marginTop="20dp"
+        android:layout_alignStart="@+id/dropdown_menu"
+        android:layout_below="@+id/dropdown_menu"
+        android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
+        android:layout_height="wrap_content"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvFriendsInformation"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_below="@+id/tvMyFriends"
+        android:layout_margin="15dp"
+        />
 
-</FrameLayout>
+</RelativeLayout>

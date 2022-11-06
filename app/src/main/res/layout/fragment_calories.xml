@@ -6,9 +6,153 @@
     tools:context=".fragments.CaloriesFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Calorie Counter"
+            android:fontFamily="@font/rufina"
+            android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
+            android:gravity="top|center"
+            android:layout_marginTop="10dp"
+            android:textSize="25dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Breakfast"
+            android:textSize="20dp"
+            android:fontFamily="@font/rufina"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/tvbreakfastCal"
+            android:fontFamily="@font/rufina"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Input Calories"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lunch"
+            android:fontFamily="@font/rufina"
+            android:textSize="20dp"/>
+        <EditText
+            android:id="@+id/tvlunchCal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/rufina"
+            android:ems="10"
+            android:hint="Input Calories"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dinner"
+            android:fontFamily="@font/rufina"
+            android:textSize="20dp"/>
+        <EditText
+            android:id="@+id/tvdinnerCal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/rufina"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Input Calories"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Snacks"
+            android:fontFamily="@font/rufina"
+            android:textSize="20dp"/>
+        <EditText
+            android:id="@+id/tvsnackCal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/rufina"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Input Calories"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Water Intake"
+            android:fontFamily="@font/rufina"
+            android:textSize="20dp"/>
+        <EditText
+            android:id="@+id/tvWaterIntake"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/rufina"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Input water"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Steps"
+            android:fontFamily="@font/rufina"
+            android:textSize="20dp"/>
+        <EditText
+            android:id="@+id/tvStepsWalked"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/rufina"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Input steps"/>
+
+        <Button
+            android:id="@+id/tvAddButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calculate Total"/>
+
+        <TextView
+            android:id="@+id/resultTotalCalories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/rufina"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+            tools:text="You ate 1200 calories out of 400 calorie goal"
+            android:layout_marginTop="25dp"
+            android:textSize="15dp"/>
+
+
+        <TextView
+            android:id="@+id/tvWaterComplete"
+            android:layout_width="wrap_content"
+            android:fontFamily="@font/rufina"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"
+            android:layout_marginTop="20dp"
+            tools:text="You drank 30 oz of water out of 40 oz goal."
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tvStepsComplete"
+            android:layout_width="wrap_content"
+            android:fontFamily="@font/rufina"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"
+            android:layout_marginTop="20dp"
+            tools:text="You took 40 steps out of 500 step goal."
+            android:textSize="15dp" />
+
+
+    </LinearLayout>
 
 </FrameLayout>
