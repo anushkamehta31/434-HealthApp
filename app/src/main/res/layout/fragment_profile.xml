@@ -31,12 +31,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Personal Information"
-                    android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
-                    />
+                    android:fontFamily="@font/rufina"
+                    android:textAppearance="@style/TextAppearance.Material3.TitleLarge" />
                 <TextView
                     android:id="@+id/tvUserName"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/rufina"
                     tools:text="anushkamehta"
                     android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
                     />
@@ -46,6 +47,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     tools:text="115 lbs"
+                    android:fontFamily="@font/rufina"
                     android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"
                     android:textColor="?android:attr/textColorSecondary"
                     />
@@ -55,6 +57,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     tools:text="21 yrs"
+                    android:fontFamily="@font/rufina"
                     android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"
                     android:textColor="?android:attr/textColorSecondary"
                     />
@@ -64,6 +67,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:text="64 inches"
+                    android:fontFamily="@font/rufina"
                     android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
                     android:textColor="?android:attr/textColorSecondary"
                     />
@@ -117,6 +121,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Goals"
+                    android:fontFamily="@font/rufina"
                     android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
                     />
                 <TextView
@@ -124,6 +129,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
+                    android:fontFamily="@font/rufina"
                     tools:text="115 lbs"
                     android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"
                     android:textColor="?android:attr/textColorSecondary"
@@ -133,6 +139,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
+                    android:fontFamily="@font/rufina"
                     tools:text="1,800 calories per day"
                     android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
                     android:textColor="?android:attr/textColorSecondary"
@@ -142,6 +149,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
+                    android:fontFamily="@font/rufina"
                     tools:text="30 oz water per day"
                     android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
                     android:textColor="?android:attr/textColorSecondary"
@@ -151,6 +159,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
+                    android:fontFamily="@font/rufina"
                     tools:text="10,000 steps per day"
                     android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
                     android:textColor="?android:attr/textColorSecondary"
@@ -165,6 +174,7 @@
                 android:layout_margin="8dp"
                 android:orientation="horizontal">
                 <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnEditGoals"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="8dp"
@@ -183,12 +193,11 @@
         android:id="@+id/btnLogout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        app:cornerRadius="20dp"
-        android:text="Log Out"
-        android:layout_marginBottom="100dp"
         android:layout_alignParentBottom="true"
-        />
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
+        android:text="Log Out"
+        app:cornerRadius="20dp" />
 
 
 
