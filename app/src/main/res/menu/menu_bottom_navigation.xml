@@ -14,8 +14,8 @@
         app:showAsAction="always" />
     <item
         android:id="@+id/action_calories"
-        android:icon="@drawable/restaurant"
-        android:title="Calories"
+        android:icon="@drawable/calculator"
+        android:title="Health Journal"
         app:showAsAction="always" />
     <item
         android:id="@+id/action_friends"
