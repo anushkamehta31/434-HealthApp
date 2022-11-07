@@ -18,7 +18,7 @@
         style="@style/TextAppearance.Material3.TitleMedium"
         android:layout_toEndOf="@+id/icon_user"
         android:fontFamily="@font/rufina"
-        android:layout_marginStart="5dp"
+        android:layout_marginStart="10dp"
         android:layout_height="wrap_content"/>
 
     <TextView
@@ -26,7 +26,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         tools:text="180 calories"
-        android:layout_marginStart="5dp"
+        android:layout_marginStart="10dp"
         android:layout_toEndOf="@+id/icon_user"
         android:fontFamily="@font/rufina"
         android:layout_below="@+id/tvUserName"/>
@@ -36,7 +36,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_toEndOf="@+id/icon_user"
-        android:layout_marginStart="5dp"
+        android:layout_marginStart="10dp"
         tools:text="80 oz per day"
         android:fontFamily="@font/rufina"
         android:layout_below="@+id/tvGoalCalories"/>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -7,8 +8,189 @@
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="40dp"
+        tools:text="Hello, Anushka was here"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/rufina"
+        android:textAppearance="@style/TextAppearance.Material3.TitleSmall"
+        android:textSize="25dp"
+        />
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/calories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progressBar2"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+        android:textColor="?android:attr/textColorSecondary" />
+    <TextView
+        android:id="@+id/water"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progressBarWater"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+        android:textColor="?android:attr/textColorSecondary" />
+    <TextView
+        android:id="@+id/steps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progressBar3"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+        android:textColor="?android:attr/textColorSecondary" />
+
+    <TextView
+        android:id="@+id/week"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Today's Progress"
+        android:paddingTop="130dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/rufina"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+        android:textSize="20dp"
+        />
+
+    <ProgressBar
+        android:id="@+id/progressBarWater"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="125dp"
+        android:layout_height="517dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="-65dp"
+        android:background="@drawable/circle_shape"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="65"
+        android:progressDrawable="@drawable/circular_progress_bar"
+        android:thickness="20dp" />
+
+
+    <TextView
+        android:id="@+id/tvWater"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rufina"
+        android:text="Daily Water"
+        android:layout_alignTop="@+id/tvSteps"
+        android:layout_marginStart="60dp"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Caption" />
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="125dp"
+        android:layout_height="517dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="241dp"
+        android:layout_marginRight="-65dp"
+        android:background="@drawable/circle_shape"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="65"
+        android:progressDrawable="@drawable/circular_progress_bar"
+        android:thickness="20dp" />
+
+    <TextView
+        android:id="@+id/tvSteps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progressBar2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-341dp"
+        android:layout_marginEnd="53dp"
+        android:fontFamily="@font/rufina"
+        android:text="Daily Steps"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Caption" />
+
+    <ProgressBar
+        android:id="@+id/progressBar3"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="121dp"
+        android:layout_height="140dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="144dp"
+        android:layout_marginRight="-65dp"
+        android:background="@drawable/circle_shape"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="65"
+        android:progressDrawable="@drawable/circular_progress_bar"
+        android:thickness="20dp" />
+
+    <TextView
+        android:id="@+id/tvCalories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/rufina"
+        android:text="Daily Calories"
+        android:layout_below="@id/progressBar3"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Caption" />
+
+    <TextView
+        android:id="@+id/tvRecommendations"
+        android:layout_width="wrap_content"
+        android:text="Recommendations"
+        android:layout_below="@id/tvCalories"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/rufina"
+        android:textAppearance="@style/TextAppearance.Material3.TitleSmall"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="wrap_content"
+        android:text="Youtube Workout Videos based on your level of fitness."
+        android:layout_below="@+id/tvRecommendations"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/rufina"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tvYoutubeLink"
+        tools:text="www.youtube.com"
+        android:layout_below="@id/tvDescription"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="10dp"
+        android:autoLink="web"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <!--    <ProgressBar-->
+    <!--        android:id="@+id/progressBar2"-->
+    <!--        style="?android:attr/progressBarStyleHorizontal"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="454dp"-->
+    <!--        android:layout_alignParentRight="true"-->
+    <!--        android:layout_marginLeft="-338dp"-->
+    <!--        android:layout_marginRight="252dp"-->
+    <!--        android:layout_toRightOf="@id/progressBar"-->
+    <!--        android:background="@drawable/circle_shape"-->
+    <!--        android:indeterminate="false"-->
+    <!--        android:max="100"-->
+    <!--        android:progress="65"-->
+    <!--        android:progressDrawable="@drawable/circular_progress_bar"-->
+    <!--        android:thickness="20dp" />-->
+</RelativeLayout>
+    <!--    <TextView-->
+    <!--        android:id="@+id/txtProgress"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        android:textAppearance="?android:attr/textAppearanceSmall" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/calorieIntake"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Calorie Intake"-->
+    <!--        android:paddingLeft="20dp"-->
+    <!--        android:paddingTop="600dp" />-->
+

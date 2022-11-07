@@ -18,6 +18,7 @@ import android.widget.Toast;
 
 import com.example.a434_healthapp.R;
 import com.example.a434_healthapp.adapters.ItemsAdapter;
+import com.google.android.material.button.MaterialButton;
 
 import org.apache.commons.io.FileUtils;
 
@@ -33,7 +34,7 @@ import java.util.List;
 public class ToDoFragment extends Fragment {
 
     List<String> items;
-    Button btnAdd;
+    MaterialButton btnAdd;
     EditText etItem;
     RecyclerView rvItems;
     ItemsAdapter itemsAdapter;

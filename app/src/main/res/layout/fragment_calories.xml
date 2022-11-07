@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragments.CaloriesFragment">
 
     <!-- TODO: Update blank fragment layout -->
@@ -16,7 +17,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Calorie Counter"
+            android:text="Daily Health Journal"
             android:fontFamily="@font/rufina"
             android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
             android:gravity="top|center"
@@ -28,6 +29,7 @@
             android:layout_height="wrap_content"
             android:text="Breakfast"
             android:textSize="20dp"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
             android:fontFamily="@font/rufina"
             android:layout_marginTop="20dp"/>
 
@@ -36,6 +38,7 @@
             android:fontFamily="@font/rufina"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_weight="1"
             android:ems="10"
             android:hint="Input Calories"/>
@@ -52,6 +55,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:fontFamily="@font/rufina"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:ems="10"
             android:hint="Input Calories"/>
 
@@ -67,6 +71,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/rufina"
             android:layout_weight="1"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:ems="10"
             android:hint="Input Calories"/>
 
@@ -82,6 +87,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/rufina"
             android:layout_weight="1"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:ems="10"
             android:hint="Input Calories"/>
 
@@ -97,6 +103,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/rufina"
             android:layout_weight="1"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:ems="10"
             android:hint="Input water"/>
 
@@ -113,12 +120,15 @@
             android:fontFamily="@font/rufina"
             android:layout_weight="1"
             android:ems="10"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:hint="Input steps"/>
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/tvAddButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            app:cornerRadius="20dp"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"
             android:text="Calculate Total"/>
 
         <TextView
